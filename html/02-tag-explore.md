@@ -43,13 +43,12 @@
 - <section> -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (like "Features," "Testimonials", "Contact").
 - <aside> -> Sidebar, related info, ads.
 - <footer> -> Bottom section (legal, contacts, links).
-- <figure> + <figcaption> -> Images, charts, code snippets with captions.
-- <mark> -> (highlight text),
-- <time> -> (dates/times in a structured format),
-- <address> -> (contact info).
+- <figure> + <figcaption> -> Images, charts, diagram, code snippets with captions.
+- <time> -> dates/times in a structured format.
+- <address> -> contact info.
 
 # Code snippets
-- pre tag: preformatted text, preserves whitespace and line breaks. 
+- `<pre>` tag: preformatted text, preserves whitespace and line breaks. 
 ```html
 <pre>
              A
@@ -58,7 +57,7 @@
             O N
 </pre>
 ```
-- code tag: semantic tag, often wrapped with pre tag to preserve code intendation.
+- `<code>` tag: semantic tag, often wrapped with pre tag to preserve code intendation.
 ```html
 <code>
     function greet(name) {
@@ -67,3 +66,11 @@
     greet("World");
 </code>
 ```
+
+# Formatting
+- `<sub> and <sup>` tags: for subscript and superscript
+- `<small>` tag: for small text in side-comments, copywrite, legal text. One font size smaller.
+- `<hr />` tag: for horizontal rule in page, a line.
+- `<br />` tag: for line break in page.
+- `<mark>` tag: simply highlight content.
+- `<ins> and <del>` tags: for highlighting range of content that has been inserted or deleted respectively.
