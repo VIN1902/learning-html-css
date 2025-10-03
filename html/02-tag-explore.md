@@ -78,3 +78,8 @@
 - `<figure> + <figcaption>` tags: Images, charts, diagram, code snippets with captions.
 - `<time>` tag: dates/times in a structured format.
 - `<address>` tag: contact info.
+
+# iframe
+- used for embedding content of another web-page within current web-page. nested browsing context.
+- comes with security issues, some attributes might handle that (read on mdn, about sandbox).
+- mostly used with video content. like youtube, vimeo, etc. also used for maps and such.
