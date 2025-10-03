@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Tells browser that document served is of html type -->
+<html lang="en"> <!-- 'lang' is called the attribute -->
+<head> <!-- Head is a Child of html element -->
+    <meta charset="UTF-8"> <!-- metadata about the webpage, follow google's recommendation for SEO on https://developers.google.com/search/docs/crawling-indexing/special-tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 'meta:' is the emmet abbrivation -->
+    <title>Document</title> <!-- only visible aspect of head element on browser tab, along with favicon. -->
+</head>
+<body> <!-- Second child of html element, actually what's visible on browser screen -->
+    <h1>HTML</h1>
+    <p>Use index.html as file name if you want that to be recognized as entry point by different s/w, also its the standard.</p>
+    <p>Emmet is s/w that provides functionality to write fast html and css. vscode has it pre-configured. provides abbreviation for boilerplate too.</p>
+    <p>Read mdn documentation for filling gaps in knowledge.</p>
+    <p>HTML is a structure language before hypertext or anything. The point is to provide structure to web page. Others like markdown do that too but HTML is most supported universally. Everthing has a browser by default thesedays.</p>
+    <p>Heading tags are not just font-sizes, they provide relevance to page structure by assigning importance to content, not only to reader but to search-engines.</p>
+    <p>Tag is the smallest unit, Element is opening tag (along with attribute plus its value) + content + closing tag.</p>
+    <p>For tags its recommended that you provide some closing, either proper closing tag or self-closing. If not then browser won't give errors but certain frameworks like React might.</p>
+    <br /> <!-- Good practice to write it as a self-closing tag instead of just open -->
+    <p>HTML is not case-sensitive, no need to write tag capital.</p>
+    <h1>Nested <span>element</span></h1>
+    <p>Elements can be nested with other elements inside them. like using span tag in heading above.</p>
+    <p>'#' value to attributes like href in anchor tag means 'stay at current page and scroll to the top'. '#' is fragment identifier pointing to top of current page. Use it as </p>
+    <ul>
+        <li>A 'scroll to top' link. <a href="#">Click here to go at top</a></li>
+        <li>Just a <i>temporary placeholder</i> for actual links cause it will either reload or scroll to top of page, which is often unwanted.</li>
+        <li>To jump to any element on current page by specifying its id. ex: href = '#someId'</li>
+    </ul>
+    <p>Some attributes are required for a tag others are optional. like title attribute is optional, it provides a small section when hovered over an element.</p>
+</body>
+</html>
