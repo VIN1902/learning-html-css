@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Adding videos and audios to page</h1>
+    <p>For adding media from other webpages like youtube use iframe not these elements. This is when your media is at same server where your html file is stored.</p>
+    <p>In this examples the html file and media files are all stored on local-machine so we use these media tags. Just like in case of server.</p>
+    <p>Track element is the child for both media elements. <br/> Specify a timed text track (or time-based data) that can be displayed in parallel with the media element. <br/> In .vtt format - web video text tracks. Subtitle is default for kind attribute (caption, description, etc). <br/> URL value of src attribute must have the same origin as the document.</p>
+    <p>Inside video or audio tag you can also add text as fallback in case media doesn't load.</p>
+
+    <p>For HTML APIs (geo location, canvas, drag and drop), JS is needed pure html is not enough and better yet use frameworks or libraries.</p>
+
+    <h2>Video</h2>
+
+    <video width="320" height="240" controls autoplay loop>
+        <source src="../assets/video1.mp4">
+        <track src="subtitle.vtt" srclang="en" label="English" kind="subtitles">
+        Your browser does not support video.
+    </video>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="../assets/audio1.mp3">
+        <track src="desc.vtt" srclang="en" label="English" kind="descriptions">
+        Your browser does not support audio.
+    </audio>
+
+</body>
+</html>
