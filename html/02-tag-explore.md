@@ -43,9 +43,6 @@
 - <section> -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (like "Features," "Testimonials", "Contact").
 - <aside> -> Sidebar, related info, ads.
 - <footer> -> Bottom section (legal, contacts, links).
-- <figure> + <figcaption> -> Images, charts, diagram, code snippets with captions.
-- <time> -> dates/times in a structured format.
-- <address> -> contact info.
 
 # Code snippets
 - `<pre>` tag: preformatted text, preserves whitespace and line breaks. 
@@ -68,9 +65,16 @@
 ```
 
 # Formatting
-- `<sub> and <sup>` tags: for subscript and superscript
-- `<small>` tag: for small text in side-comments, copywrite, legal text. One font size smaller.
-- `<hr />` tag: for horizontal rule in page, a line.
-- `<br />` tag: for line break in page.
+- `<sub> and <sup>` tags: subscript and superscript
+- `<small>` tag: small text in side-comments, copywrite, legal text. One font size smaller.
+- `<hr />` tag: horizontal rule in page, a line.
+- `<br />` tag: line break in page.
 - `<mark>` tag: simply highlight content.
-- `<ins> and <del>` tags: for highlighting range of content that has been inserted or deleted respectively.
+- `<ins> and <del>` tags: highlighting range of content that has been inserted or deleted respectively.
+- `<blockquote cite=''>` tag: including quotes.
+- `<cite>` tag: cite some source.
+- `<abbr title=''>`tag: provide full-form for abbreviations.
+- `<bdo dir=''>` tag: bidirectional content to specify direction of text.
+- `<figure> + <figcaption>` tags: Images, charts, diagram, code snippets with captions.
+- `<time>` tag: dates/times in a structured format.
+- `<address>` tag: contact info.

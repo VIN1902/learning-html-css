@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning about Links and Images</h1>
+    <hr />
+    <h2>Using Links</h2>
+    <a href="http://www.wikipedia.com" target="_self" rel="noopener noreferrer">Go to Wikipedia</a>
+    <p>href attribute means hyperlink reference, basically the url.</p>
+    <p>target attribute is '_blank' for following the link in new tab. '_self' for following the link in same tab (replaces this webpage in the tab). and rest aren't used much.</p>
+    <p>In rel attribute: <br /> <strong>1. noopener:</strong> addresses a security vulnerability that arises when you open links in new tabs or windows using the target=”_blank” attribute. A malicious website opened this way could gain partial control of the original window (the one where you clicked the link). The noopener attribute prevents this by severing the connection between the newly opened tab and the original page. <br /> <strong>2. noreferrer:</strong> is about privacy. When you click a link, the website you land on usually gets information about where you came from (the referrer). The noreferrer attribute hides this referrer information. This can be helpful when linking to external sites that you might not necessarily endorse and want to protect your visitor's privacy. </p>
+
+    <hr />
+
+    <h2>Using Images</h2>
+
+    <p>1. use img tag in isolation</p>
+    <p>2. use figure and figcaption tags for semantic purposes and grouping.</p>
+    <p>3. use picture and source tags for responsive images (different sizes/formats depending on screen/device). Browser picks the first matching source based on media queries or format support, otherwise falls back to img tag as default.</p>
+    <p>You can even add image map to images, which allows you to control different actions based on certain parts of an image, like click-events.</p>
+
+    <figure>
+        <img src="../assets/image1.jpg" alt="No image loaded" width="200px" />
+        <figcaption>Image from local machine</figcaption>
+    </figure>
+    <figure>
+        <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg" alt="No image loaded" width="200px">
+        <figcaption>Image from internet using link</figcaption>
+    </figure>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="../assets/image1.jpg"/>
+        <source media="(min-width: 460px)" srcset="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg"/>
+        <img src="../assets/image1.jpg" alt="No image loaded" width="200px">
+    </picture>
+
+    <img src="https://cdn.pixabay.com/photo/2019/07/05/06/34/bitcoin-4317828_1280.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="" title="" href="" onclick="coinClickAlert()" coords="635,433,201" shape="circle">
+    </map>
+
+    <hr />
+
+    <script>
+        function coinClickAlert() {
+            alert("You clicked on the coin!")
+        }
+    </script>
+
+</body>
+</html>
