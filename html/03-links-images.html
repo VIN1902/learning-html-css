@@ -14,7 +14,7 @@
     <p>target attribute is '_blank' for following the link in new tab. '_self' for following the link in same tab (replaces this webpage in the tab). and rest aren't used much.</p>
     <p>In rel attribute: <br /> <strong>1. noopener:</strong> addresses a security vulnerability that arises when you open links in new tabs or windows using the target=”_blank” attribute. A malicious website opened this way could gain partial control of the original window (the one where you clicked the link). The noopener attribute prevents this by severing the connection between the newly opened tab and the original page. <br /> <strong>2. noreferrer:</strong> is about privacy. When you click a link, the website you land on usually gets information about where you came from (the referrer). The noreferrer attribute hides this referrer information. This can be helpful when linking to external sites that you might not necessarily endorse and want to protect your visitor's privacy. </p>
 
-    <p>Using base element you can define base url and target attribute that all other relative-links in the page will follow. Only one such element should be there.</p>
+    <p>Using base element you can define default url and target attribute that all other relative-links in the page will follow. Only one such element should be there.</p>
     <base href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">
     <p><a href="#Mozilla">Follow this link</a> to Brenhan Eich's Wikipedia page, and specifically to Mozilla section on page even if the href of this anchor tag only has '#Mozilla' and not the full link (https://en.wikipedia.org/wiki/Brendan_Eich/#Mozilla) as that is defined in base element.</p>
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input, select {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <h2>Attributes</h2>
+    <ul>
+        <li>action: tells browser <em>where</em> to send data after submit button is clicked.</li>
+        <ul>
+            <li>usually a url is passed as value, to indicate the server-endpoint.</li>
+            <li>if attribute is omitted then data is sent to current page.</li>
+        </ul>
+        <li>method: specifies <em>how</em> the form data is sent to server.</li>
+        <ul>
+            <li>GET: send data as part of url (?key1=value1&key2=value2). Data is visible and Not secure.</li>
+            <li>POST: send data inside request body. Data is not visible and secure.</li>
+        </ul>
+        <li>enctype: how to <em>encode/format</em> the data before sending. Applicable only with post method.</li>
+        <ul>
+            <li>application/x-www-form-urlencoded: url-encoded, default, for simple text data.</li>
+            <li>multipart/form-data: non-encoded, for file uploads.</li>
+            <li>text/plain: non-encoded, for plain-text, rare.</li>
+        </ul>
+        <li>value: this is attribute for input fields. specify default value of input field that'll be sent.</li>
+        <ul><li>in button-like input tags value act as their name.</li></ul>
+        <li>placholder: its not the value but an example. no data will be sent with just placeholder.</li>
+    </ul>
+    <h2>Practices</h2>
+    <ul>
+        <li>Give a label tag with any input tag to identify the corresponding input field by clicking on input title.</li>
+        <ul><li>Connect both by specifying same name used in id attribute of input tag, inside for attribute of label tag.</li></ul>
+        <li>Styling is done via CSS.</li>
+        <li>Things like submit are a button or input field doesn't matter much.</li>
+        <ul>
+            <li>With button tag you can imbed any other html like img etc. whereas with input tag only value can be set.</li>
+        </ul>
+    </ul>
+    <hr/>
+
+    <form action="" method="" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
+        <caption>Fill Details</caption>
+
+        <label for="full-name">Full name</label>
+        <input type="text" placeholder="Jhon Doe" id="full-name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="jhon@email.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********">
+
+        <input type="week">
+
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="1" max="10">
+
+        <label for="relation-status">Married?</label>
+        <input type="radio" id="relation-status">
+
+        <label for="editors">Your code editor</label>
+        <select id="editors">
+            <option value="vscode">VS Code</option>
+            <option value="sublime">Sublime Text</option>
+        </select>
+
+        <input type="reset" value="Clear">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
