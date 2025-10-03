@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #d6d6d6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Country Data</h1>
+    <small>Writing tables is easier with Emmet. Table tag is just for structure, it requires bit of CSS to even resemble looks of a table.</small>
+    <hr/>
+    <table>
+        <caption style="text-align: start;"><mark>Tabular Data</mark></caption>
+        <thead>
+            <tr>
+                <th>Country Name</th>
+                <th>Country Code</th>
+                <th>Country Tel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>IN</td>
+                <td>+91</td>
+            </tr>
+            <tr>
+                <td>United States of America</td>
+                <td>USA</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>JP</td>
+                <td>+81</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>CN</td>
+                <td>+86</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>RU</td>
+                <td>+7</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><small>Vikas Indora @ 2025 <br/> <address>ind2004@gmail.com <br/> +91 9871313785</address></small></td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr/>
+</body>
+</html>
