@@ -1,0 +1,74 @@
+/* Universal Selector (*) */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Type Selector (element) */
+p {
+  color: darkslategray;
+}
+
+li {
+    margin: 10px 0px;
+}
+
+/* Class Selector (.class) */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID Selector (#id) */
+#unique {
+  font-weight: bold;
+  color: crimson;
+}
+
+/* Attribute Selector (element[attribute]) */
+p[data-info] {
+  border: 1px dashed blue;
+  padding: 4px;
+}
+
+/* Descendant Selector (ancestor descendant) */
+.container p {
+  color: green;
+}
+
+/* Child Selector (parent > child) */
+.container > span {
+  color: purple;
+  font-style: italic;
+}
+
+/* Adjacent Sibling Selector (A + B) */
+.sibling-test + h3 {
+  color: orange;
+}
+
+/* General Sibling Selector (A ~ B) */
+.sibling-test ~ h4 {
+  color: teal;
+}
+
+/* Pseudo-class Selector (:hover) */
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+/* Pseudo-element Selector (::before and ::after) */
+button::before {
+  content: "👉 ";
+}
+button::after {
+  content: " 👈";
+}
+p::first-letter {
+    font-style: italic;
+    font-size: large;
+}
+
+/* Grouping Selector (selector1, selector2) */
+h2, h3 {
+  text-decoration: underline;
+}

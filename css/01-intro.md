@@ -25,6 +25,7 @@ selector {
   <button class="card__button card__button--primary">Buy Now</button>
 </div>
 ```
+- Well you'll be using a framework which will generate classes and ids with its own naming convention in professional settings. So just read it.
 
 # Tips
 - View website left-to-right instead of top-to-bottom when deciding layout or CSS breakdown.

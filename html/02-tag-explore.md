@@ -36,11 +36,11 @@
     - ex: A copyright strip at the bottom (footer), A set of links to main pages (nav).
 
 ## Most common ones
-- `<header>` -> Top section (logo, intro, sometimes nav).
+- `<header>` -> Top section (logo, intro, nav).
 - `<nav>` -> Navigation menu.
 - `<main>` -> The unique central content of the page.
-- `<article>` -> A self-contained piece of content that could stand alone and make sense outside the page. Blog post, forum post, product card, news story.
-- `<section>` -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (like "Features," "Testimonials", "Contact").
+- `<article>` -> A self-contained piece of content that could stand alone and make sense outside the page if you were to take it out in isolation. Blog post, forum post, product card, news story.
+- `<section>` -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (aka conceptual grouping) (like "Features," "Testimonials", "Contact"). Mostly sites use this inisde main.
 - `<aside>` -> Sidebar, related info, ads.
 - `<footer>` -> Bottom section (legal, contacts, links).
 

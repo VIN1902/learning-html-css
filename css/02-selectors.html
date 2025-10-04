@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-16">
+  <title>CSS Selectors Demo</title>
+  <link rel="stylesheet" href="./02-selectors.css">
+</head>
+<body>
+
+  <h1>CSS Selectors Reference</h1>
+
+  <section>
+    <h2>List of Selectors with Descriptions</h2>
+    <small><em style="background-color: rgb(0, 255, 255); padding: 10px;">Tip: read selectors right-to-left.</em></small>
+    <ol>
+      <li><strong>Universal Selector</strong> (<code>*</code>) = Selects all elements on the page.</li>
+      <li><strong>Type Selector</strong> (<code>element</code>) = Selects all elements of a given type (e.g., <code>p</code> selects all paragraphs).</li>
+      <li><strong>Class Selector</strong> (<code>.class</code>) = Selects all elements with the specified class attribute.</li>
+      <li><strong>ID Selector</strong> (<code>#id</code>) = Selects a single element with the given unique ID.</li>
+      <li><strong>Attribute Selector</strong> (<code>element[attribute]</code>) = Selects elements that have a specific attribute (and optionally a value).</li>
+      <li><strong>Descendant Selector</strong> (<code>ancestor descendant</code>) = Selects elements that are inside (at any depth) another element.</li>
+      <li><strong>Child Selector</strong> (<code>parent > child</code>) = Selects elements that are a direct child of another element.</li>
+      <li><strong>Adjacent Sibling Selector</strong> (<code>A + B</code>) = Selects an element that is immediately after another element (same parent).</li>
+      <li><strong>General Sibling Selector</strong> (<code>A ~ B</code>) = Selects all siblings after a given element (same parent, not necessarily immediate).</li>
+      <li><strong>Pseudo-class Selector</strong> (<code>:hover</code>, <code>:first-child</code>, etc.) = Selects elements based on state/behaviour or position.</li>
+      <li><strong>Pseudo-element Selector</strong> (<code>::before</code>, <code>::after</code>) = Selects and styles parts of elements (like inserting content before or after).</li>
+      <li><strong>Grouping Selector</strong> (<code>selector1, selector2</code>) = Applies the same styles to multiple selectors at once.</li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <section class="playground">
+    <h2>Playground: Selector Demonstration</h2>
+
+    <p>This is a simple paragraph inside the playground.</p>
+    <p class="highlight">This paragraph has a class.</p>
+    <p id="unique">This paragraph has an ID.</p>
+    <p data-info="yes">This paragraph has a data attribute.</p>
+
+    <div class="container">
+      <p>Child 1 inside container</p>
+      <span>Span inside container</span>
+      <p>Child 2 inside container</p>
+    </div>
+
+    <p class="sibling-test">This paragraph will be followed by siblings.</p>
+    <h3>I'm the adjacent sibling (directly after p)</h3>
+    <h4>I'm a general sibling (also after p, but not immediately)</h4>
+
+    <button>Hover over me</button>
+  </section>
+
+</body>
+</html>
