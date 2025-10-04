@@ -6,7 +6,7 @@
     - Screen readers are assistive software that convert on-screen text and images into non-visual output like synthesized speech or braille
 - Provides accessiblity, more structure, better SEO, maintainability.
 ```html
-<br> <!-- makes text bold (purely visual, non-semantic). -->
+<b> <!-- makes text bold (purely visual, non-semantic). -->
 <strong> <!-- indicates text is important (semantic, and also often bold by default). -->
 
 <i>
@@ -36,13 +36,13 @@
     - ex: A copyright strip at the bottom (footer), A set of links to main pages (nav).
 
 ## Most common ones
-- <header> -> Top section (logo, intro, sometimes nav).
-- <nav> -> Navigation menu.
-- <main> -> The unique central content of the page.
-- <article> -> A self-contained piece of content that could stand alone and make sense outside the page. Blog post, forum post, product card, news story.
-- <section> -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (like "Features," "Testimonials", "Contact").
-- <aside> -> Sidebar, related info, ads.
-- <footer> -> Bottom section (legal, contacts, links).
+- `<header>` -> Top section (logo, intro, sometimes nav).
+- `<nav>` -> Navigation menu.
+- `<main>` -> The unique central content of the page.
+- `<article>` -> A self-contained piece of content that could stand alone and make sense outside the page. Blog post, forum post, product card, news story.
+- `<section>` -> A thematic grouping of related content, usually with a heading, that contributes to the page’s structure. Logical grouping (like "Features," "Testimonials", "Contact").
+- `<aside>` -> Sidebar, related info, ads.
+- `<footer>` -> Bottom section (legal, contacts, links).
 
 # Code snippets
 - `<pre>` tag: preformatted text, preserves whitespace and line breaks. 
