@@ -1,2 +1,86 @@
 /* Styling before understanding position concept for visuals only */
 
+body {
+    height: 160vh;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #63c229;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;;
+}
+
+/* Position */
+
+/* 
+1. Absolute 
+- Remove element from the document, other reposition as if that element didn't exit. 
+- Unlock 5 new properties: top,bottom,left,right and z-index.
+- By default element will position relative to document but by putting position: relative; to its parent, it will now be relative to that. You can chose the relative parent, it doesn't has to be immediate.
+
+2. Relative
+- Elements remain in the normal flow of document. 
+- Unlock 5 new properties: top,bottom,left,right and z-index.
+- They position relative to immediate parent.
+
+3. Fixed
+- Fix element to a position. Behave like absolute.
+- Unlock 5 new properties: top,bottom,left,right and z-index.
+- Unlike absolute, on scroll it sticks to that position.
+- Unlike absolute you can only position it relative to document.
+
+4. Sticky
+- Fix elemnet to a position.
+- Only works with top property defined.
+- The space before the element before the element starts scrolling donw with page.
+
+5. Static
+- Defualt position of elements. No new properties or different behavior.
+*/
+
+.item-1 {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: auto;
+    right: -25px;
+    z-index: -1;
+}
+
+.item-2 {
+    position: relative;
+    top: 75px;
+    left: 180px;
+}
+
+.item-11 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.item-4 {
+    position: sticky;
+    top: 0px;
+}
