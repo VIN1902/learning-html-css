@@ -1,0 +1,42 @@
+/* Pre styling for setting up demonstration */
+.container {
+    border: 5px solid;
+    height: 400px;
+}
+
+.item {
+    height: 75px;
+    width: 75px;
+    background-color: #fc8d8d;
+    border: 6px solid red;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+}
+
+article p {
+    margin: 7px;
+}
+
+/* Flexbox */
+
+.container {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    gap: 1em;
+}
+
+.item-1 {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-basis: 40%;
+}
+
+.item-11 {
+    order: 12;
+}
