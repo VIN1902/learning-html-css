@@ -24,5 +24,12 @@
             <div class="item item-12">12</div>
         </div>
     </section>
+    <script>
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => {
+            const randomColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+            item.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>
